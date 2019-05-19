@@ -28,19 +28,19 @@
 //     background: linear-gradient(to right, rgba($ph-bg, 0) 46%, rgba($ph-bg, .35) 50%, rgba($ph-bg, 0) 54%) 50% 50%;
 //   }
   
-  &::after {
-    content: " ";
-    display: block;
-    background-color: $ph-bg;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transform: translateX(0);
-    animation: 1.8s loading-placeholder ease-in-out infinite;
-  }
+  // &::after {
+  //   content: " ";
+  //   display: block;
+  //   background-color: $ph-bg;
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   z-index: 1;
+  //   transform: translateX(0);
+  //   animation: 1.8s loading-placeholder ease-in-out infinite;
+  // }
 
   > * {
     flex: 1 1 auto;
@@ -119,6 +119,91 @@
   }
   100% {
     transform: translate3d(30%, 0, 0);
+  }
+}
+
+.loading-no-delay {
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    display: block;
+    background-color: $ph-bg;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0);
+    animation: 1.5s loading-placeholder ease-in-out infinite;
+  }
+}
+
+.loading-delay-200 {
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    display: block;
+    background-color: $ph-bg;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0);
+    animation: 1.5s loading-placeholder ease-in-out infinite;
+  }
+}
+
+.loading-delay-350 {
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    display: block;
+    background-color: $ph-bg;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0);
+    animation: 1.5s loading-placeholder ease-in-out infinite;
+  }
+}
+
+.loading-delay-500 {
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    display: block;
+    background-color: $ph-bg;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0);
+    animation: 1.5s loading-placeholder ease-in-out infinite;
+  }
+}
+
+.loading-delay-700 {
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    display: block;
+    background-color: $ph-bg;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0);
+    animation: 1.5s loading-placeholder ease-in-out infinite;
   }
 }
 
